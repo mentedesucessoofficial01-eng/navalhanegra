@@ -1009,3 +1009,63 @@ ul, ol { padding: 0; list-style: none; }
   .no-rodape .barra-agenda { transform: translateY(110%); }
   .rodape { padding-bottom: 6rem; }
 }
+
+/* =====================================================================
+   PÁGINA DE TEXTO (política de privacidade)
+   ===================================================================== */
+.pagina-legal { background: var(--offwhite); }
+.pagina-legal .topo { gap: 1rem; }
+.voltar-site {
+  margin-left: auto;
+  display: inline-flex; align-items: center; gap: .55rem;
+  min-height: 44px;
+  font-stretch: 85%; font-size: .74rem; font-weight: 550;
+  letter-spacing: .16em; text-transform: uppercase; text-decoration: none;
+  color: var(--texto-escuro-2);
+  transition: color .3s;
+}
+.voltar-site svg { width: 1rem; height: 1rem; transition: transform .3s var(--ease); }
+.voltar-site:hover { color: var(--ouro); }
+.voltar-site:hover svg { transform: translateX(-3px); }
+
+.texto-legal {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: calc(var(--faixa) + var(--topo) + clamp(3rem, 7vw, 5.5rem)) var(--margem) clamp(4rem, 8vw, 6rem);
+  color: var(--texto-claro);
+}
+.texto-legal .rotulo { color: var(--couro); }
+.texto-legal .titulo-secao { font-size: clamp(2.5rem, 6vw + .5rem, 4.4rem); }
+.texto-legal .titulo-secao em { color: var(--couro); }
+.texto-legal-data { margin-top: 1.2rem; font-size: .9rem; color: var(--texto-claro-2); }
+.texto-legal-resumo {
+  margin-top: 2.2rem;
+  padding: 1.3rem 1.5rem;
+  border-left: 3px solid var(--ouro);
+  background: rgba(107, 66, 38, .07);
+}
+.texto-legal h2 {
+  margin-top: 2.8rem;
+  font-family: var(--f-display); font-weight: 500;
+  font-size: clamp(1.45rem, 2.4vw, 1.75rem); line-height: 1.15;
+}
+.texto-legal p { margin-top: .9rem; text-wrap: pretty; }
+.texto-legal a:not(.botao) {
+  color: var(--couro); font-weight: 600;
+  text-decoration: underline; text-decoration-color: rgba(201, 162, 39, .7); text-underline-offset: 3px;
+}
+.texto-legal a:not(.botao):hover { color: var(--carvao); }
+.texto-legal :focus-visible { outline-color: var(--couro); }
+.texto-legal-fim { margin-top: 3.2rem !important; }
+.pagina-legal .rodape { padding-top: 0; }
+.pagina-legal .rodape-base { margin-top: 0; }
+
+@media (max-width: 767px) {
+  .voltar-site { font-size: .7rem; letter-spacing: .14em; white-space: nowrap; }
+  .voltar-site .so-pc { display: none; }
+  .pagina-legal .marca-nome { white-space: nowrap; }
+  .texto-legal-fim .botao { width: 100%; justify-content: center; }
+  .pagina-legal .rodape { padding-bottom: 2rem; }
+}
+.rodape-legal { color: var(--texto-escuro-2); text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; transition: color .3s; }
+.rodape-legal:hover { color: var(--gelo); }
