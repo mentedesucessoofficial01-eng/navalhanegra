@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Navalha Negra · Barbearia masculina premium</title>
+  <meta name="description" content="Navalha Negra: barbearia masculina premium. Corte, degradê, barba na navalha e acabamento com precisão. Agende seu horário pelo WhatsApp.">
+  <meta name="theme-color" content="#1C1C1C">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Navalha Negra · Tradição no corte. Atitude no estilo.">
+  <meta property="og:description" content="Barbearia masculina premium. Precisão em cada corte, personalidade em cada detalhe.">
+  <meta property="og:image" content="media/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+  <link rel="preload" href="fonts/bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="media/video/hero-inicio.webp" as="image">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Marca que o JavaScript está ativo. Se algo falhar no carregamento,
+       em 6 s o conteúdo aparece sem animação (nunca fica tela vazia). */
+    document.documentElement.classList.add("js");
+    setTimeout(function () { if (!window.__navalhaOk) document.documentElement.classList.add("sem-anim"); }, 6000);
+  </script>
+</head>
+<body class="carregando">
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Ícones e símbolo da marca (desenhados uma vez, usados no site todo) -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-emblema" viewBox="0 0 48 48">
+      <mask id="m-fio" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
+        <rect width="48" height="48" fill="#fff"/>
+        <line x1="13.42" y1="13.65" x2="35.21" y2="39.55" stroke="#000" stroke-width="0.8"/>
+      </mask>
+      <rect x="8" y="8" width="2.4" height="33.5" fill="currentColor"/>
+      <rect x="37.8" y="6.5" width="2.4" height="30" fill="currentColor"/>
+      <path mask="url(#m-fio)" d="M13.46 7.62 L40.51 36.5 L34.49 41.77 L9.39 11.18 A2.7 2.7 0 0 1 13.46 7.62 Z" fill="currentColor"/>
+      <circle cx="11.4" cy="9.7" r="1.35" fill="#C9A227"/>
+    </symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24">
+      <path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.3 21.7l4.8-1.3A9.8 9.8 0 1 0 12 2.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M8.7 7.2c.2-.4.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.1.2-.2.3 0 .6.4.7 1 1.4 1.6 1.9.7.6 1.3.8 1.6 1 .2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3 0 .2 0 .9-.3 1.6-.4.7-1.5 1.3-2.1 1.3-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3 0-1.5.8-2.2 1-2.5Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-seta" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-seta-volta" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-topo" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-fechar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-anterior" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-proximo" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="i-fone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4.2-2 1.3a11 11 0 0 0 6 6l1.3-2 4.2 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4a21 21 0 0 0-2.3-.1c-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3.5v11.2a3.6 3.6 0 1 1-3.6-3.6M14 3.5c.4 2.6 2.2 4.3 4.8 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <!-- Pilares -->
+    <symbol id="p-precisao" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 2.5v5M12 16.5v5M2.5 12h5M16.5 12h5" stroke="currentColor" stroke-width="1.2"/><circle cx="12" cy="12" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="p-detalhe" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="m15 15 5.5 5.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M8 10.5h5" stroke="currentColor" stroke-width="1.2"/></symbol>
+    <symbol id="p-atendimento" viewBox="0 0 24 24"><path d="M4 5.5h11a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5H9l-3.5 3v-3H4A1.5 1.5 0 0 1 2.5 13V7A1.5 1.5 0 0 1 4 5.5Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M16.5 9H20a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 20 17h-1v2.5L16 17h-3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></symbol>
+    <symbol id="p-estilo" viewBox="0 0 24 24"><path d="M6.5 18.5c-1-1.8-1.5-4-1.5-6.5a7 7 0 0 1 14 0c0 1.3-.1 2.6-.4 3.8M9 20.3c-.9-2.2-1.4-5-1.4-8.3a4.4 4.4 0 0 1 8.8 0c0 3.1-.3 5.9-1.2 8.3M12 12c0 3.2-.3 6-1 8.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></symbol>
+    <symbol id="p-ambiente" viewBox="0 0 24 24"><path d="M5 11V7.5A2.5 2.5 0 0 1 7.5 5h9A2.5 2.5 0 0 1 19 7.5V11" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M3.5 11.5a1.5 1.5 0 0 1 3 0V14h11v-2.5a1.5 1.5 0 0 1 3 0V17h-17Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M6 17v2M18 17v2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></symbol>
+    <symbol id="p-higiene" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.2 3 7.8 7 9.5 4-1.7 7-5.3 7-9.5V6Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="m9 12 2.2 2.2L15.5 10" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- Tela de abertura -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-marca">
+    <svg class="loader-emblema"><use href="#i-emblema"/></svg>
+    <span class="loader-nome">Navalha Negra</span>
+  </div>
+  <div class="loader-trilho"><span id="loader-barra"></span></div>
+  <span id="loader-pct">0%</span>
+</div>
+
+<!-- Faixa de portfólio: volta ao site principal do Estúdio Forja -->
+<div class="faixa-forja">
+  <a href="https://estudioforja.com.br/" data-forja>
+    <svg aria-hidden="true"><use href="#i-seta-volta"/></svg>
+    Voltar ao Estúdio Forja
+  </a>
+</div>
+
+<header class="topo" id="topo">
+  <a class="marca" href="#inicio" aria-label="Navalha Negra, voltar ao início">
+    <svg class="marca-emblema" aria-hidden="true"><use href="#i-emblema"/></svg>
+    <span class="marca-nome">Navalha Negra<small>Barbearia</small></span>
+  </a>
+  <nav class="nav" aria-label="Seções do site">
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <a class="botao botao-ouro botao-topo" data-wa href="#agendar">Agendar</a>
+  <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<!-- Menu do celular -->
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu principal">
+    <a href="#inicio"><i>01</i>Início</a>
+    <a href="#servicos"><i>02</i>Serviços</a>
+    <a href="#sobre"><i>03</i>Sobre</a>
+    <a href="#diferenciais"><i>04</i>Diferenciais</a>
+    <a href="#galeria"><i>05</i>Galeria</a>
+    <a href="#depoimentos"><i>06</i>Experiência</a>
+    <a href="#contato"><i>07</i>Contato</a>
+  </nav>
+  <a class="botao botao-ouro" data-wa href="#agendar"><svg aria-hidden="true"><use href="#i-whats"/></svg>Agendar pelo WhatsApp</a>
+  <a class="menu-forja" href="https://estudioforja.com.br/" data-forja><svg aria-hidden="true"><use href="#i-seta-volta"/></svg>Voltar ao Estúdio Forja</a>
+</div>
+
+<main id="conteudo">
+
+  <!-- 01 · HERO -->
+  <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+    <div class="hero-midia">
+      <video id="hero-video" muted playsinline preload="auto" poster="media/video/hero-inicio.webp" aria-hidden="true" tabindex="-1"></video>
+      <img class="hero-final" src="media/video/hero-fim.webp" alt="" aria-hidden="true">
+    </div>
+    <div class="hero-veu" aria-hidden="true"></div>
+    <div class="hero-conteudo">
+      <p class="rotulo hero-rotulo"><span class="fio-ouro" aria-hidden="true"></span>Tradição no corte. Atitude no estilo.</p>
+      <h1 class="hero-titulo" id="hero-titulo"><span class="linha">Navalha</span><span class="linha"><em>Negra</em></span></h1>
+      <p class="hero-manchete">Seu estilo não é detalhe. É identidade.</p>
+      <p class="hero-texto">Precisão em cada corte, personalidade em cada detalhe. Descubra uma experiência de barbearia feita para quem valoriza o próprio estilo.</p>
+      <div class="hero-acoes">
+        <a class="botao botao-ouro" data-wa href="#agendar"><svg aria-hidden="true"><use href="#i-whats"/></svg>Agendar horário</a>
+        <a class="botao botao-linha" href="#servicos">Conhecer serviços<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+      </div>
+    </div>
+    <a class="hero-rolar" href="#servicos" aria-label="Rolar para os serviços"><span>Role</span><i aria-hidden="true"></i></a>
+  </section>
+
+  <!-- 02 · SERVIÇOS -->
+  <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+    <div class="servicos-lado">
+      <div class="servicos-cabeca" data-anima="slide-left">
+        <p class="rotulo" data-item><span class="num">02</span>Serviços</p>
+        <h2 class="titulo-secao" id="servicos-titulo" data-item>Serviços pensados no detalhe.</h2>
+        <p class="texto-secao" data-item>Escolha o serviço e fale direto com a gente pelo WhatsApp. A mensagem já chega pronta, com o serviço que você escolheu.</p>
+      </div>
+      <figure class="servicos-foto" data-anima="corte">
+        <div class="moldura" data-item><img src="media/img/imagem-2-1600.webp" srcset="media/img/imagem-2-800.webp 800w, media/img/imagem-2-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 40vw" width="1600" height="900" loading="lazy" decoding="async" alt="Barbeiro fazendo um degradê com máquina na lateral da cabeça de um cliente de barba"></div>
+        <figcaption data-item>Degradê na máquina, acabamento à mão.</figcaption>
+      </figure>
+    </div>
+    <div class="servicos-lista">
+      <ul class="cartoes" id="lista-servicos" data-anima="stagger-up"><!-- preenchido por js/conteudo.js --></ul>
+      <p class="aviso" id="aviso-precos"></p>
+    </div>
+  </section>
+
+  <!-- 03 · SOBRE -->
+  <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+    <div class="sobre-midia" data-anima="clip-reveal">
+      <div class="moldura" data-item>
+        <video id="sobre-video" muted playsinline preload="none" poster="media/video/ferramentas-inicio.webp" aria-hidden="true" tabindex="-1"></video>
+      </div>
+      <p class="legenda" data-item>Navalha, pincel e tesoura: ferramentas que atravessaram gerações sem perder a função.</p>
+    </div>
+    <div class="sobre-texto" data-anima="fade-up">
+      <p class="rotulo" data-item><span class="num">03</span>Sobre a Navalha Negra</p>
+      <h2 class="titulo-secao" id="sobre-titulo" data-item>Mais que uma barbearia. <em>Uma assinatura de estilo.</em></h2>
+      <p class="texto-secao" data-item>Aqui, o corte começa antes da máquina ligar: começa na conversa. Entendemos o que você quer transmitir, olhamos para o formato do rosto e para a rotina que o cabelo precisa acompanhar. Depois, a técnica faz o resto.</p>
+      <p class="texto-secao" data-item>A navalha é o nosso símbolo porque não aceita pressa nem improviso. Cada contorno é feito à mão, com ferramentas clássicas, num ambiente pensado para você se sentir à vontade do início ao fim.</p>
+      <ol class="principios" data-item>
+        <li><span>I</span>Conversa antes do corte</li>
+        <li><span>II</span>Ferramentas clássicas, técnica atual</li>
+        <li><span>III</span>Tempo para cada detalhe</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 04 · DIFERENCIAL (filme do salão guiado pela rolagem) -->
+  <section class="filme" id="diferenciais" aria-labelledby="dif-titulo">
+    <div class="filme-palco">
+      <canvas id="filme-canvas" aria-hidden="true"></canvas>
+      <div class="filme-veu" aria-hidden="true"></div>
+      <div class="veu-lado veu-esq" aria-hidden="true"></div>
+      <div class="veu-lado veu-dir" aria-hidden="true"></div>
+      <div id="filme-escuro" aria-hidden="true"></div>
+      <div class="marquee" aria-hidden="true"><div class="marquee-texto">Tradição no corte <span>·</span> Atitude no estilo <span>·</span> Tradição no corte <span>·</span> Atitude no estilo <span>·</span></div></div>
+    </div>
+
+    <div class="filme-texto lado-esq" data-enter="2" data-leave="16" data-animation="clip-reveal">
+      <p class="rotulo" data-item><span class="num">04</span>Nosso diferencial</p>
+      <h2 class="titulo-secao" id="dif-titulo" data-item>O que você sente antes mesmo do primeiro corte.</h2>
+      <p class="texto-secao" data-item>Seis compromissos sustentam cada atendimento. Continue rolando e entre no salão.</p>
+    </div>
+
+    <div class="filme-texto lado-dir" data-enter="19" data-leave="33" data-animation="slide-right">
+      <article class="pilar" data-item>
+        <svg aria-hidden="true"><use href="#p-precisao"/></svg>
+        <h3>Precisão técnica</h3>
+        <p>Linhas limpas, simetria conferida e degradê sem marcas. O acabamento é revisado antes de você levantar.</p>
+      </article>
+      <article class="pilar" data-item>
+        <svg aria-hidden="true"><use href="#p-detalhe"/></svg>
+        <h3>Atenção aos detalhes</h3>
+        <p>Do pezinho à sobrancelha, o que é pequeno recebe o mesmo cuidado do que é grande.</p>
+      </article>
+    </div>
+
+    <div class="filme-texto lado-esq" data-enter="37" data-leave="51" data-animation="scale-up">
+      <article class="pilar" data-item>
+        <svg aria-hidden="true"><use href="#p-atendimento"/></svg>
+        <h3>Atendimento personalizado</h3>
+        <p>A gente ouve antes de cortar. Cada visita parte do que você gosta e do que funciona no seu dia a dia.</p>
+      </article>
+      <article class="pilar" data-item>
+        <svg aria-hidden="true"><use href="#p-estilo"/></svg>
+        <h3>Valorização do estilo individual</h3>
+        <p>Não existe corte da moda que sirva para todo mundo. Existe o corte que tem a ver com você.</p>
+      </article>
+    </div>
+
+    <div class="filme-texto centro" data-enter="55" data-leave="68" data-animation="rotate-in" data-escuro="true">
+      <p class="rotulo" data-item>A regra da casa</p>
+      <p class="citacao" data-item>A navalha não aceita <em>pressa</em>.</p>
+      <p class="texto-secao" data-item>Por isso, cada horário tem o tempo que o serviço pede.</p>
+    </div>
+
+    <div class="filme-texto lado-dir" data-enter="71" data-leave="85" data-animation="corte">
+      <article class="pilar" data-item>
+        <svg aria-hidden="true"><use href="#p-ambiente"/></svg>
+        <h3>Ambiente confortável</h3>
+        <p>Poltronas de couro, luz quente e tempo para respirar. Aqui, esperar também faz parte da experiência.</p>
+      </article>
+      <article class="pilar" data-item>
+        <svg aria-hidden="true"><use href="#p-higiene"/></svg>
+        <h3>Higiene e cuidado</h3>
+        <p>Ferramentas higienizadas a cada atendimento e lâmina nova na navalha. Cuidado que você não vê, mas sente.</p>
+      </article>
+    </div>
+
+    <div class="filme-texto lado-esq" data-enter="88" data-leave="100" data-animation="fade-up" data-persist="true">
+      <p class="rotulo" data-item>O espaço</p>
+      <p class="titulo-secao" data-item>Venha sentar na nossa cadeira.</p>
+      <a class="botao botao-ouro" data-item data-wa href="#agendar"><svg aria-hidden="true"><use href="#i-whats"/></svg>Agendar horário</a>
+    </div>
+  </section>
+
+  <!-- 05 · GALERIA -->
+  <section class="galeria" id="galeria" aria-labelledby="galeria-titulo">
+    <div class="galeria-cabeca" data-anima="slide-left">
+      <p class="rotulo" data-item><span class="num">05</span>Galeria de estilos</p>
+      <h2 class="titulo-secao" id="galeria-titulo" data-item>Estilos que falam por quem os usa.</h2>
+      <p class="texto-secao" data-item>Cortes, degradês, barbas e os detalhes do nosso dia a dia. Toque em uma imagem para ampliar.</p>
+    </div>
+    <div class="galeria-grade" data-anima="scale-up">
+      <figure class="g-item g-ret" data-item><button type="button" data-ampliar="media/galeria/retrato.webp" data-legenda="Corte: degradê baixo com volume no topo"><img src="media/galeria/retrato.webp" width="760" height="900" loading="lazy" decoding="async" alt="Retrato de homem com degradê baixo, topo com volume e barba alinhada"></button><figcaption><i>I</i>Corte</figcaption></figure>
+      <figure class="g-item g-deg" data-item><button type="button" data-ampliar="media/galeria/degrade.webp" data-legenda="Degradê: transição feita na máquina"><img src="media/galeria/degrade.webp" width="640" height="820" loading="lazy" decoding="async" alt="Máquina fazendo a transição do degradê acima da orelha"></button><figcaption><i>II</i>Degradê</figcaption></figure>
+      <figure class="g-item g-bar" data-item><button type="button" data-ampliar="media/galeria/barba.webp" data-legenda="Barba alinhada: contorno definido no maxilar"><img src="media/galeria/barba.webp" width="600" height="600" loading="lazy" decoding="async" alt="Perfil de homem com barba alinhada e contorno definido"></button><figcaption><i>III</i>Barba alinhada</figcaption></figure>
+      <figure class="g-item g-nav" data-item><button type="button" data-ampliar="media/galeria/navalha.webp" data-legenda="Ferramentas: navalha clássica sobre o estojo de couro"><img src="media/galeria/navalha.webp" width="1060" height="560" loading="lazy" decoding="async" alt="Navalha clássica de cabo de madeira aberta sobre estojo de couro"></button><figcaption><i>IV</i>Ferramentas</figcaption></figure>
+      <figure class="g-item g-cad" data-item><button type="button" data-ampliar="media/galeria/cadeira.webp" data-legenda="A cadeira: couro preto e cromo"><img src="media/galeria/cadeira.webp" width="640" height="720" loading="lazy" decoding="async" alt="Encosto de couro preto de uma cadeira de barbeiro"></button><figcaption><i>V</i>A cadeira</figcaption></figure>
+      <figure class="g-item g-amb" data-item><button type="button" data-ampliar="media/img/imagem-5-1600.webp" data-legenda="O salão: três cadeiras, espelhos de madeira e área de espera"><img src="media/galeria/ambiente.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Salão da barbearia com três cadeiras de couro, espelhos de moldura de madeira e sofá Chesterfield"></button><figcaption><i>VI</i>O salão</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 06 · EXPERIÊNCIA DO CLIENTE -->
+  <section class="depoimentos" id="depoimentos" aria-labelledby="dep-titulo">
+    <div class="dep-cabeca" data-anima="fade-up">
+      <p class="rotulo" data-item><span class="num">06</span>Experiência do cliente</p>
+      <h2 class="titulo-secao" id="dep-titulo" data-item>O que fica depois do espelho.</h2>
+    </div>
+    <div class="dep-lista" id="lista-depoimentos" data-anima="slide-right"><!-- preenchido por js/conteudo.js --></div>
+    <p class="aviso" id="aviso-depoimentos"></p>
+  </section>
+
+  <!-- 07 · LOCALIZAÇÃO E FUNCIONAMENTO -->
+  <section class="contato" id="contato" aria-labelledby="contato-titulo">
+    <div class="contato-cabeca" data-anima="clip-reveal">
+      <p class="rotulo" data-item><span class="num">07</span>Localização e funcionamento</p>
+      <h2 class="titulo-secao" id="contato-titulo" data-item>Sua cadeira está a uma mensagem de distância.</h2>
+    </div>
+    <div class="contato-grade" data-anima="stagger-up">
+      <div class="contato-bloco" data-item>
+        <h3><svg aria-hidden="true"><use href="#i-relogio"/></svg>Horários</h3>
+        <dl class="horarios" id="lista-horarios"></dl>
+        <p class="aviso" id="aviso-horarios"></p>
+      </div>
+      <div class="contato-bloco" data-item>
+        <h3><svg aria-hidden="true"><use href="#i-pin"/></svg>Endereço</h3>
+        <p class="contato-endereco" id="endereco"></p>
+        <div class="mapa" id="mapa" hidden></div>
+      </div>
+      <div class="contato-bloco" data-item>
+        <h3><svg aria-hidden="true"><use href="#i-whats"/></svg>Contato</h3>
+        <p class="texto-secao">Agendamentos, dúvidas e remarcações pelo WhatsApp.</p>
+        <a class="botao botao-ouro" data-wa href="#agendar"><svg aria-hidden="true"><use href="#i-whats"/></svg>Chamar no WhatsApp</a>
+        <p class="contato-fone" id="telefone" hidden></p>
+        <ul class="redes" id="redes" hidden></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 · CHAMADA FINAL -->
+  <section class="chamada" id="agendar" aria-labelledby="chamada-titulo">
+    <div class="chamada-fundo" aria-hidden="true"><img src="media/img/imagem-1-1600.webp" srcset="media/img/imagem-1-800.webp 800w, media/img/imagem-1-1600.webp 1600w" sizes="100vw" width="1600" height="900" loading="lazy" decoding="async" alt=""></div>
+    <div class="chamada-conteudo" data-anima="corte">
+      <p class="rotulo" data-item><span class="num">08</span>Agende</p>
+      <h2 class="chamada-titulo" id="chamada-titulo" data-item>Está na hora de renovar <em>seu estilo.</em></h2>
+      <p class="texto-secao" data-item>Escolha seu próximo visual e experimente o cuidado que cada detalhe merece.</p>
+      <a class="botao botao-ouro botao-grande" data-item data-wa href="#agendar"><svg aria-hidden="true"><use href="#i-whats"/></svg>Agendar meu horário pelo WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<!-- 09 · RODAPÉ -->
+<footer class="rodape">
+  <div class="rodape-grade">
+    <div class="rodape-marca">
+      <a class="marca" href="#inicio" aria-label="Navalha Negra, voltar ao início">
+        <svg class="marca-emblema" aria-hidden="true"><use href="#i-emblema"/></svg>
+        <span class="marca-nome">Navalha Negra<small>Barbearia</small></span>
+      </a>
+      <p>Barbearia masculina premium. Tradição no corte, atitude no estilo e cuidado em cada detalhe.</p>
+    </div>
+    <nav class="rodape-col" aria-label="Navegação do rodapé">
+      <h3>Navegação</h3>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#depoimentos">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="rodape-col">
+      <h3>Serviços</h3>
+      <ul id="rodape-servicos"></ul>
+    </div>
+    <div class="rodape-col">
+      <h3>Contato</h3>
+      <a data-wa href="#agendar">WhatsApp</a>
+      <span id="rodape-telefone" hidden></span>
+      <ul class="redes" id="rodape-redes" hidden></ul>
+      <h3 class="rodape-sub">Horários</h3>
+      <dl class="horarios horarios-curto" id="rodape-horarios"></dl>
+    </div>
+  </div>
+  <div class="rodape-base">
+    <p>© <span id="ano">2026</span> Navalha Negra.</p>
+    <p class="credito">Um projeto desenvolvido por <a href="https://estudioforja.com.br/" data-forja>Estúdio Forja</a>.</p>
+    <a class="rodape-topo" href="#inicio"><svg aria-hidden="true"><use href="#i-topo"/></svg>Voltar ao topo</a>
+  </div>
+</footer>
+
+<!-- Botões flutuantes -->
+<a class="flutuante-whats" data-wa href="#agendar" aria-label="Agendar pelo WhatsApp"><svg aria-hidden="true"><use href="#i-whats"/></svg></a>
+<button class="flutuante-topo" type="button" aria-label="Voltar ao topo"><svg aria-hidden="true"><use href="#i-topo"/></svg></button>
+
+<!-- Janela do agendamento (modo portfólio do Estúdio Forja) -->
+<dialog class="janela" id="janela-agenda" aria-labelledby="janela-titulo" aria-describedby="janela-texto">
+  <button class="janela-fechar" type="button" data-fechar aria-label="Fechar"><svg aria-hidden="true"><use href="#i-fechar"/></svg></button>
+  <svg class="janela-emblema" aria-hidden="true"><use href="#i-emblema"/></svg>
+  <p class="rotulo"><span class="fio-ouro" aria-hidden="true"></span>Agendamento de demonstração</p>
+  <h2 class="janela-titulo" id="janela-titulo">Esse clique viraria um <em>agendamento.</em></h2>
+  <div id="janela-texto">
+    <p class="janela-texto">Num site de verdade, <span id="janela-servico">o seu horário</span> seguiria agora direto para o WhatsApp da barbearia, com a mensagem pronta. Sem formulário, sem espera.</p>
+    <p class="janela-texto janela-forte">A Navalha Negra é um projeto do <strong>Estúdio Forja</strong>. O seu negócio pode ter um site assim.</p>
+  </div>
+  <div class="janela-acoes">
+    <a class="botao botao-ouro" id="janela-whatsapp" href="https://estudioforja.com.br/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Quero um site assim</a>
+    <a class="botao botao-linha" href="https://estudioforja.com.br/" data-forja>Ver outros projetos</a>
+  </div>
+  <button class="janela-continuar" type="button" data-fechar>Continuar explorando a Navalha Negra</button>
+</dialog>
+
+<!-- Ampliação das fotos da galeria -->
+<dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+  <figure>
+    <img id="lightbox-img" src="data:," alt="">
+    <figcaption id="lightbox-legenda"></figcaption>
+  </figure>
+  <button class="lb-fechar" type="button" aria-label="Fechar"><svg aria-hidden="true"><use href="#i-fechar"/></svg></button>
+  <button class="lb-ant" type="button" aria-label="Foto anterior"><svg aria-hidden="true"><use href="#i-anterior"/></svg></button>
+  <button class="lb-prox" type="button" aria-label="Próxima foto"><svg aria-hidden="true"><use href="#i-proximo"/></svg></button>
+</dialog>
+
+<noscript><style>#loader{display:none}.carregando{overflow:auto}[data-anima] [data-item],.filme-texto{opacity:1!important;transform:none!important}</style></noscript>
+
+<script src="vendor/lenis.min.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="js/conteudo.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
