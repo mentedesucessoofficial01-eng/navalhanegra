@@ -269,9 +269,12 @@
     }
     avanca(8);
     var fontes = (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(function () { avanca(40); });
-    var video = prepararHero().then(function () { avanca(85); });
-    var minimo = new Promise(function (ok) { setTimeout(ok, 900); });
-    var limite = new Promise(function (ok) { setTimeout(ok, 4500); });
+    // No celular o site aparece logo; o vídeo entra quando estiver pronto
+    // (até lá fica a primeira imagem dele). No computador espera o vídeo.
+    var heroPronto = prepararHero();
+    var video = (ehCelular ? Promise.resolve() : heroPronto).then(function () { avanca(85); });
+    var minimo = new Promise(function (ok) { setTimeout(ok, ehCelular ? 450 : 900); });
+    var limite = new Promise(function (ok) { setTimeout(ok, ehCelular ? 1200 : 4500); });
 
     return Promise.race([Promise.all([fontes, video, minimo]), limite]).then(function () {
       avanca(100);
@@ -366,11 +369,12 @@
     window.addEventListener("resize", function () { if (window.innerWidth > 960) fecharMenu(true); });
   }
 
-  var topo = $(".topo"), fWhats = $(".flutuante-whats"), fTopo = $(".flutuante-topo");
+  var topo = $(".topo"), fWhats = $(".flutuante-whats"), fTopo = $(".flutuante-topo"), barra = $(".barra-agenda");
   function atualizarTopo() {
     var y = window.pageYOffset;
     if (topo && (menu ? menu.hidden : true)) topo.classList.toggle("solido", y > 40);
     if (fWhats) fWhats.classList.toggle("visivel", y > window.innerHeight * 0.75);
+    if (barra) barra.classList.toggle("visivel", y > window.innerHeight * 0.75);
     if (fTopo) fTopo.classList.toggle("visivel", y > window.innerHeight * 2);
   }
   function iniciarTopo() {
@@ -732,10 +736,42 @@
   }
 
   /* -------------------------------------------------------------------
+     CARROSSÉIS DO CELULAR (serviços, galeria, depoimentos)
+     No computador o CSS mostra tudo em grade e os pontinhos ficam ocultos.
+     ------------------------------------------------------------------- */
+  function iniciarCarrosseis() {
+    $$("[data-carrossel]").forEach(function (c) {
+      var itens = Array.prototype.slice.call(c.children);
+      if (itens.length < 2) return;
+      var nav = document.createElement("div");
+      nav.className = "carrossel-nav";
+      nav.innerHTML = '<span class="carrossel-dica" aria-hidden="true">Deslize</span><div class="carrossel-pontos">' +
+        itens.map(function (_, i) { return '<button type="button" aria-label="Ver item ' + (i + 1) + " de " + itens.length + '"></button>'; }).join("") +
+        "</div>";
+      c.parentNode.insertBefore(nav, c.nextSibling);
+      var pontos = $$("button", nav);
+      function passo() { return itens[1].offsetLeft - itens[0].offsetLeft || c.clientWidth; }
+      function marcar() {
+        var i = Math.max(0, Math.min(itens.length - 1, Math.round(c.scrollLeft / passo())));
+        pontos.forEach(function (b, k) { b.setAttribute("aria-current", k === i ? "true" : "false"); });
+        if (i > 0) nav.classList.add("usado");
+      }
+      // a dica "Deslize" some depois que a pessoa toca no carrossel
+      c.addEventListener("touchstart", function () { nav.classList.add("usado"); }, { once: true, passive: true });
+      pontos.forEach(function (b, i) {
+        b.addEventListener("click", function () { c.scrollTo({ left: i * passo(), behavior: reduz ? "auto" : "smooth" }); });
+      });
+      c.addEventListener("scroll", function () { requestAnimationFrame(marcar); }, { passive: true });
+      marcar();
+    });
+  }
+
+  /* -------------------------------------------------------------------
      INÍCIO
      ------------------------------------------------------------------- */
   try {
     montarConteudo();
+    iniciarCarrosseis();
     ligarLinks();
     iniciarRolagem();
     iniciarMenu();

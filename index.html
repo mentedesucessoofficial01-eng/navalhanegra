@@ -155,7 +155,7 @@
       </figure>
     </div>
     <div class="servicos-lista">
-      <ul class="cartoes" id="lista-servicos" data-anima="stagger-up"><!-- preenchido por js/conteudo.js --></ul>
+      <ul class="cartoes" id="lista-servicos" data-anima="stagger-up" data-carrossel aria-label="Serviços"><!-- preenchido por js/conteudo.js --></ul>
       <p class="aviso" id="aviso-precos"></p>
     </div>
   </section>
@@ -257,7 +257,7 @@
       <h2 class="titulo-secao" id="galeria-titulo" data-item>Estilos que falam por quem os usa.</h2>
       <p class="texto-secao" data-item>Cortes, degradês, barbas e os detalhes do nosso dia a dia. Toque em uma imagem para ampliar.</p>
     </div>
-    <div class="galeria-grade" data-anima="scale-up">
+    <div class="galeria-grade" data-anima="scale-up" data-carrossel aria-label="Galeria de estilos">
       <figure class="g-item g-ret" data-item><button type="button" data-ampliar="media/galeria/retrato.webp" data-legenda="Corte: degradê baixo com volume no topo"><img src="media/galeria/retrato.webp" width="760" height="900" loading="lazy" decoding="async" alt="Retrato de homem com degradê baixo, topo com volume e barba alinhada"></button><figcaption><i>I</i>Corte</figcaption></figure>
       <figure class="g-item g-deg" data-item><button type="button" data-ampliar="media/galeria/degrade.webp" data-legenda="Degradê: transição feita na máquina"><img src="media/galeria/degrade.webp" width="640" height="820" loading="lazy" decoding="async" alt="Máquina fazendo a transição do degradê acima da orelha"></button><figcaption><i>II</i>Degradê</figcaption></figure>
       <figure class="g-item g-bar" data-item><button type="button" data-ampliar="media/galeria/barba.webp" data-legenda="Barba alinhada: contorno definido no maxilar"><img src="media/galeria/barba.webp" width="600" height="600" loading="lazy" decoding="async" alt="Perfil de homem com barba alinhada e contorno definido"></button><figcaption><i>III</i>Barba alinhada</figcaption></figure>
@@ -273,7 +273,7 @@
       <p class="rotulo" data-item><span class="num">06</span>Experiência do cliente</p>
       <h2 class="titulo-secao" id="dep-titulo" data-item>O que fica depois do espelho.</h2>
     </div>
-    <div class="dep-lista" id="lista-depoimentos" data-anima="slide-right"><!-- preenchido por js/conteudo.js --></div>
+    <div class="dep-lista" id="lista-depoimentos" data-anima="slide-right" data-carrossel aria-label="Depoimentos"><!-- preenchido por js/conteudo.js --></div>
     <p class="aviso" id="aviso-depoimentos"></p>
   </section>
 
@@ -354,6 +354,11 @@
     <a class="rodape-topo" href="#inicio"><svg aria-hidden="true"><use href="#i-topo"/></svg>Voltar ao topo</a>
   </div>
 </footer>
+
+<!-- Barra fixa de agendamento (só no celular) -->
+<div class="barra-agenda">
+  <a class="botao botao-ouro" data-wa href="#agendar"><svg aria-hidden="true"><use href="#i-whats"/></svg>Agendar horário</a>
+</div>
 
 <!-- Botões flutuantes -->
 <a class="flutuante-whats" data-wa href="#agendar" aria-label="Agendar pelo WhatsApp"><svg aria-hidden="true"><use href="#i-whats"/></svg></a>
