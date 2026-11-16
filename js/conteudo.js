@@ -23,7 +23,7 @@ window.NAVALHA = {
   /* Estúdio Forja (usado no modo portfólio e no link de volta) */
   estudio: {
     nome: "Estúdio Forja",
-    site: "https://estudioforja.com.br/",
+    site: "https://estudioforja.com.br/#portfolio",
     whatsapp: "5545991164764",
     mensagem: "Olá! Vi o site da Navalha Negra e quero um site assim para o meu negócio."
   },
